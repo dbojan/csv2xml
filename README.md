@@ -10,7 +10,8 @@ Semicolon file as input is also suported.
 OS: Windows.
 Language: windows batch, powershell (for replace utf-8)
 
-Installation: right click on bat file in browser, save as.
+Installation: click on bat file in browser, select text, copy.
+Open Notepad, paste, save as csv2xml.
 
 Can be used as an replacement for csv2xlsx, csv2xls, csv2ods, csv2fods.
 

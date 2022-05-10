@@ -13,7 +13,7 @@ Semicolon file as input is also suported.
 OS: Windows.
 Language: windows batch, powershell (for replace utf-8)
 
-Installation: click on bat file in browser, select text, copy.
+Installation: click on .bat file in browser, select text, copy.
 Open Notepad, paste, save as csv2xml.bat 
 If windows ask to run, click on yes.
 

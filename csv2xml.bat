@@ -13,7 +13,7 @@ echo v 0.98
 echo.
 echo Supported delimiters: tab, semicalon, and comma /no string delimiter!/. 
 echo.
-echo Ampersand will be replaced with space. Optionally, double qotes can be removed too.
+echo Ampersand will be replaced with space. Optionally, double quotes can be removed too.
 echo.
 echo Numbers will be displayed as strings. If you need autosum or formulas, you will need to convert them to numbers.
 echo.

@@ -19,6 +19,8 @@ echo Numbers will be displayed as strings. If you need autosum or formulas, you 
 echo.
 echo To change in excel, select them, click on yellow arrow and select convert to number
 echo.
+echo Depending on your regional settings, excel will decide if 1.1 and 1,1 are numbers of strings, after conversion.
+echo.
 echo In Libre Calc, copy them. In toolbar select Paste special, Character set: Unicode utf-8, Separator options: Separated by Tab, String delimiter: leave empty.
 echo.
 echo You will also need to set column width manually in Excel/Calc. Select all colums with data by clicking on column names a,b,c, double click on the line between a,b,c.

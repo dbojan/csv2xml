@@ -1,11 +1,12 @@
 ```
 # csv2xml
-csv2xml, convert csv or tsv files to xml files.
+csv2xml, convert csv or tsv files to xml files using command line, or drag and drop in windows.
+
+Can be used as an replacement for csv2xlsx, csv2xls, csv2ods, csv2fods.
 
 Convert csv comma separated file, or tsv tab separated file to "Excel XML 2003"  spreadsheet file. 
 Output can be opened in Excel or Calc.
 Semicolon file as input is also suported.
-
 
 OS: Windows.
 Language: windows batch, powershell (for replace utf-8)
@@ -14,10 +15,7 @@ Installation: click on bat file in browser, select text, copy.
 Open Notepad, paste, save as csv2xml.bat 
 If windows ask to run, click on yes.
 
-Can be used as an replacement for csv2xlsx, csv2xls, csv2ods, csv2fods.
-
 Libre Office Calc can open xml, but cannot save it, it will offer to save in ods or xlsx format.
-
 
 Usage:
 echo Usage: csv2xml input.csv "optional output file name.xml"

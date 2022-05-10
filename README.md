@@ -4,6 +4,8 @@ csv2xml, convert csv or tsv files to xml files using command line, or drag and d
 
 Can be used as an replacement for csv2xlsx, csv2xls, csv2ods, csv2fods.
 
+String delimiter ("") is not supported, so be careful when using , as column delimiter.
+
 Convert csv comma separated file, or tsv tab separated file to "Excel XML 2003"  spreadsheet file. 
 Output can be opened in Excel or Calc.
 Semicolon file as input is also suported.

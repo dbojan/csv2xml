@@ -11,7 +11,7 @@ echo Or drag and drop csv or tsv file on csv2.xml.
 echo.
 echo v 0.98
 echo.
-echo Supported delimiters: tab, semicalon, and comma /no string delimiter!/. 
+echo Supported delimiters: tab, semicalon, pipe, and comma /no string delimiter!/. 
 echo.
 echo Ampersand will be replaced with space. Optionally, double quotes can be removed too.
 echo.
@@ -40,6 +40,7 @@ rem ,
 rem default
 set "separatortype=,"
 
+
 rem tab
 rem check if another separator exists
 findstr /m /i /c:"	" "%in%" >Nul
@@ -47,6 +48,17 @@ rem found
 rem 0 means found, 1 means not found
 if %errorlevel%==0 (
 set "separatortype=	"
+goto foundit
+)
+
+
+rem pipe
+rem check if another separator exists
+findstr /m /i /c:"|" "%in%" >Nul
+rem found
+rem 0 means found, 1 means not found
+if %errorlevel%==0 (
+set "separatortype=\|"
 goto foundit
 )
 
@@ -58,7 +70,6 @@ if %errorlevel%==0 (
 set "separatortype=;"
 goto foundit
 )
-
 
 
 :foundit

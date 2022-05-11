@@ -44,7 +44,7 @@ echo To remove pause at the end, remove pause at the end.
 
 
 
-written as code markdown, till github decides to respect newline ...
+written as preformated text, till github decides to respect newline ...
 I am not going to add two spaces at the end of every line.
 
 

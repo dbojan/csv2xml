@@ -26,13 +26,15 @@ echo Or drag and drop csv or tsv file on csv2.xml.
 echo.
 echo v 0.98
 echo.
-echo Supported delimiters: tab, semicalon, and comma /no string delimiter!/. 
+echo Supported delimiters: tab, semicalon, pipe, and comma /no string delimiter!/. 
 echo.
-echo Double quotes will be removed, ampersand will be replaced with space.
+echo Ampersand will be replaced with space. Optionally, double quotes can be removed too.
 echo.
 echo Numbers will be displayed as strings. If you need autosum or formulas, you will need to convert them to numbers.
 echo.
 echo To change in excel, select them, click on yellow arrow and select convert to number
+echo.
+echo Depending on your regional settings, excel will decide if 1.1 and 1,1 are numbers of strings, after conversion.
 echo.
 echo In Libre Calc, copy them. In toolbar select Paste special, Character set: Unicode utf-8, Separator options: Separated by Tab, String delimiter: leave empty.
 echo.

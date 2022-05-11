@@ -26,7 +26,7 @@ echo Or drag and drop csv or tsv file on csv2.xml.
 echo.
 echo v 0.98a
 echo.
-echo Supported delimiters: tab, semicalon, pipe, and comma /no string delimiter!/. 
+echo Supported delimiters: tab, semicolon, pipe, and comma /no string delimiter!/. 
 echo.
 echo Ampersand will be replaced with space. Optionally, double quotes can be removed too.
 echo.
@@ -38,7 +38,7 @@ echo Depending on your regional settings, excel will decide if 1.1 and 1,1 are n
 echo.
 echo In Libre Calc, copy them. In toolbar select Paste special, Character set: Unicode utf-8, Separator options: Separated by Tab, String delimiter: leave empty.
 echo.
-echo You will also need to set column width manually in Excel/Calc. Select all colums with data by clicking on column names a,b,c, double click on the line between a,b,c.
+echo You will also need to set column width manually in Excel/Calc. Select all columns with data by clicking on column names a,b,c, double click on the line between a,b,c.
 echo.
 echo To remove pause at the end, remove pause at the end.
 

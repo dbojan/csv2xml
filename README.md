@@ -24,7 +24,7 @@ echo Usage: csv2xml input.csv "optional output file name.xml"
 echo.
 echo Or drag and drop csv or tsv file on csv2.xml.
 echo.
-echo v 0.98
+echo v 0.98a
 echo.
 echo Supported delimiters: tab, semicalon, pipe, and comma /no string delimiter!/. 
 echo.

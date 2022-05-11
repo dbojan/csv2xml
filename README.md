@@ -2,7 +2,7 @@
 # csv2xml
 csv2xml, convert csv or tsv files to xml files using command line, or drag and drop in windows.
 
-Can be used as an replacement for csv2xlsx, csv2xls, csv2ods, csv2fods.
+Can be used as an replacement for csv2xlsx, csv2xls, csv2ods, csv2fods, or tsv2xml, tsv2ods, tsv2xlsx, tsv2xls ...
 
 String delimiter ("") is not supported, so be careful when using , as column delimiter.
 

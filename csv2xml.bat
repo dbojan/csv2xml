@@ -36,7 +36,7 @@ set tempfile=%~1.temp.txt
 
 rem local file for findstr
 set inlocal=%temp%\temporaryFileForFindstr.txt
-copy /y "%in%" "%inlocal%"
+copy /y "%in%" "%inlocal%" >Nul
 
 rem ,
 rem default

@@ -2,6 +2,7 @@
 
 
 @echo off
+
 rem echo 1=%1 2=%2
 
 if [%1]==[] (
@@ -9,11 +10,9 @@ echo Usage: csv2xml input.csv "optional output file name.xml"
 echo.
 echo Or drag and drop csv or tsv file on csv2.xml.
 echo.
-echo v 0.98a
+echo v 0.98b
 echo.
 echo Supported delimiters: tab, semicolon, pipe, and comma /no string delimiter!/. 
-echo.
-echo Ampersand will be replaced with space. Optionally, double quotes can be removed too.
 echo.
 echo Numbers will be displayed as strings. If you need autosum or formulas, you will need to convert them to numbers.
 echo.
@@ -30,11 +29,14 @@ pause
 exit /b
 )
 
-set in=1file.html
 set in=%~1
 set out=%~1.xml
 if not [%2]==[] set out=%~2
-set temp=%~1.temp.txt
+set tempfile=%~1.temp.txt
+
+rem local file for findstr
+set inlocal=%temp%\temporaryFileForFindstr.txt
+copy /y "%in%" "%inlocal%"
 
 rem ,
 rem default
@@ -43,7 +45,7 @@ set "separatortype=,"
 
 rem tab
 rem check if another separator exists
-findstr /m /i /c:"	" "%in%" >Nul
+findstr /m /i /c:"	" "%inlocal%" >Nul
 rem found
 rem 0 means found, 1 means not found
 if %errorlevel%==0 (
@@ -54,7 +56,7 @@ goto foundit
 
 rem pipe
 rem check if another separator exists
-findstr /m /i /c:"|" "%in%" >Nul
+findstr /m /i /c:"|" "%inlocal%" >Nul
 rem found
 rem 0 means found, 1 means not found
 if %errorlevel%==0 (
@@ -63,7 +65,7 @@ goto foundit
 )
 
 rem ;
-findstr /m /i /c:";" "%in%" >Nul
+findstr /m /i /c:";" "%inlocal%" >Nul
 rem found
 rem 0 means found, 1 means not found
 if %errorlevel%==0 (
@@ -75,6 +77,8 @@ goto foundit
 :foundit
 echo separator detected="%separatortype%"
 rem er=%errorlevel%-   
+
+if exist "%inlocal%" del "%inlocal%"
 
 if exist "%out%" del "%out%"
 
@@ -96,23 +100,24 @@ echo %line3.1%>> "%out%"
 
 rem append in to out file
 
-rem use temp, because we need to replace newlines(crlf) with tags
-type "%in%" > "%temp%"
+rem use tempfile, because we need to replace newlines(crlf) with tags
+type "%in%" > "%tempfile%"
 
 rem remove quotes " , optional.
-rem powershell -Command "(gc -encoding utf8 '%temp%')  -replace  '"\"', ''    | Set-Content -encoding utf8 '%temp%' "
+rem powershell -Command "(gc -encoding utf8 '%tempfile%')  -replace  '"\"', ''    | Set-Content -encoding utf8 '%tempfile%' "
 
 
 set "comma=</Data></Cell> <Cell><Data ss:Type=\"String\">"
 set "crlf=</Data></Cell></Row><Row><Cell><Data ss:Type=\"String\">"
 
+rem -replace  '&', ' '
 
-powershell -Command "(gc -encoding utf8 '%temp%')  -replace  '&', ' '   -replace '%separatortype%' , '%comma%'     -join '%crlf%'    | Set-Content -encoding utf8 '%temp%' "
+powershell -Command "(gc -encoding utf8 '%tempfile%')     -replace '%separatortype%' , '%comma%'     -join '%crlf%'    | Set-Content -encoding utf8 '%tempfile%' "
 
-rem append temp to out
-type "%temp%" >> "%out%"
+rem append tempfile to out
+type "%tempfile%" >> "%out%"
 
-del "%temp%"
+del "%tempfile%"
 
 
 rem add closing xml table tags

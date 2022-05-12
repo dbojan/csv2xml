@@ -24,11 +24,9 @@ echo Usage: csv2xml input.csv "optional output file name.xml"
 echo.
 echo Or drag and drop csv or tsv file on csv2.xml.
 echo.
-echo v 0.98a
+echo v 0.98b
 echo.
 echo Supported delimiters: tab, semicolon, pipe, and comma /no string delimiter!/. 
-echo.
-echo Ampersand will be replaced with space. Optionally, double quotes can be removed too.
 echo.
 echo Numbers will be displayed as strings. If you need autosum or formulas, you will need to convert them to numbers.
 echo.

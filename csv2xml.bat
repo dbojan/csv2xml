@@ -93,7 +93,7 @@ set "line3.1=^<Row^>^<Cell^> ^<Data ss:Type="String"^>"
 set "line3.2=^</Data^>^</Cell^>^</Row^>"
 set "line4=^</Table^> ^</Worksheet^>"
 set "line5=^</Workbook^>"
-
+ 
 
 echo %line1%>> "%out%"
 echo %line2%>> "%out%"

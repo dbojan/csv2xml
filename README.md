@@ -10,7 +10,7 @@ and can be opened and save in Excel.
 
 You can open it in Excel, or Libre Office Calc program.
 
-Can be used as an replacement for command programs like csv2xlsx, csv2xls, 
+Can be used as an replacement for command line programs like csv2xlsx, csv2xls, 
 csv2ods, csv2fods, or tsv2xml, tsv2ods, tsv2xlsx, tsv2xls ...
 
 String delimiter ("") is not supported, so be careful when using , as column delimiter.

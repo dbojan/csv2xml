@@ -1,23 +1,27 @@
-<pre>
+```
 # csv2xml
-csv2xml, convert csv or tsv files to xml files using command line, or drag and drop in windows.
 
-Can be used as an replacement for csv2xlsx, csv2xls, csv2ods, csv2fods, or tsv2xml, tsv2ods, tsv2xlsx, tsv2xls ...
+csv2xml, convert csv or tsv files to "Excel xml files" using command line, or drag and drop in Windows.
+
+"Excel XML 2003 spreadsheet file" xml, (also known as SpreadsheetML) can be used instead of Excel .xlsx file.
+You can open it in Excel, or Libre Office Calc program.
+
+Can be used as an replacement for command programs like csv2xlsx, csv2xls, 
+csv2ods, csv2fods, or tsv2xml, tsv2ods, tsv2xlsx, tsv2xls ...
 
 String delimiter ("") is not supported, so be careful when using , as column delimiter.
-
-Convert csv comma separated file, or tsv tab separated file to "Excel XML 2003" spreadsheet file (also known as SpreadsheetML). 
-Output file can be opened in Excel or Calc.
 Semicolon file as input is also suported.
 
 OS: Windows.
 Language: windows batch, powershell (for replace utf-8)
 
-Installation: click on .bat file in browser, select text, copy.
-Open Notepad, paste, save as csv2xml.bat 
-If windows ask to run, click on yes.
+Installation: save the content of .bat file as csv2xml.bat in notepad.
+Drag and drop csv files on it, to have it converted to Excel xml files.
 
 Libre Office Calc can open xml, but cannot save it, it will offer to save in ods or xlsx format.
+
+
+Info from the bat file itself:
 
 Usage:
 echo Usage: csv2xml input.csv "optional output file name.xml"
@@ -44,8 +48,8 @@ echo To remove pause at the end, remove pause at the end.
 
 
 
-written as preformated text, till github decides to respect newline ...
-I am not going to add two spaces at the end of every line.
+(This text is written as preformated text, till github decides to respect newline ...
+I am not going to add two spaces at the end of every line.)
 
 
 

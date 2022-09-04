@@ -1,9 +1,11 @@
 ```
 # csv2xml
 
-csv2xml, convert csv or tsv files to "Excel xml files" using command line, or drag and drop in Windows.
+csv2xml, convert CSV or TSV files to "Excel xml files" using command line, 
+or drag and drop CSV file to this program in Windows.
 
-"Excel XML 2003 spreadsheet file" xml, can be used instead of Excel .xlsx file.
+"Excel XML 2003 spreadsheet file" xml, can be used instead of Excel .xlsx file,
+and can be opened and save in Excel.
 (This type of xml is also known as SpreadsheetML)
 
 You can open it in Excel, or Libre Office Calc program.

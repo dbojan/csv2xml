@@ -10,11 +10,11 @@ echo Usage: csv2xml input.csv "optional output file name.xml"
 echo.
 echo Or drag and drop csv or tsv file on csv2.xml.
 echo.
-echo v 0.98b1
+echo v 0.98c
 echo.
 echo Supported delimiters: tab, semicolon, pipe, and comma /no string delimiter!/. 
 echo.
-echo Ampersand will be replaced with empty space. Optionally double quotes can be removed too.
+echo Libre Office Calc cannot handle ampersand in xml, delete it in notepad first, if using Calc. Optionally double quotes can be removed too.
 echo.
 echo Numbers will be displayed as strings. If you need autosum or formulas, you will need to convert them to numbers.
 echo.
@@ -112,7 +112,9 @@ rem powershell -Command "(gc -encoding utf8 '%tempfile%')  -replace  '"\"', ''  
 set "comma=</Data></Cell> <Cell><Data ss:Type=\"String\">"
 set "crlf=</Data></Cell></Row><Row><Cell><Data ss:Type=\"String\">"
 
-powershell -Command "(gc -encoding utf8 '%tempfile%')   -replace  '&', ' '  -replace '%separatortype%' , '%comma%'     -join '%crlf%'    | Set-Content -encoding utf8 '%tempfile%' "
+rem if you want to replace & with " " add this in front of other replace: -replace  '&', ' '  
+
+powershell -Command "(gc -encoding utf8 '%tempfile%')   -replace '%separatortype%' , '%comma%'     -join '%crlf%'    | Set-Content -encoding utf8 '%tempfile%' "
 
 rem append tempfile to out
 type "%tempfile%" >> "%out%"

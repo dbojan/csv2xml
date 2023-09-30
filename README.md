@@ -26,14 +26,15 @@ Language: windows batch, powershell (for replacing utf-8)
 
 
 ## Downloand: 
-Right click [here](https://raw.githubusercontent.com/dbojan/csv2xml/main/csv2xml.bat) to save bat file.
+Right click [here](https://raw.githubusercontent.com/dbojan/csv2xml/main/csv2xml.zip), select 'Save Link As' to save zip file.
+Unzip it somewhere.
 
 ## optional:
-Start/run, enter shell:sendto
+Run 'shell_open_sendto_folder.bat'
 Create shortcut to csv2xml.bat in newly opened "send to folder". 
 Drag csv2xml.bat to sendto folder using right mouse click. 
 Select 'create shortcuts here'.
-or download on [shell_open_sendto_folder.bat](https://raw.githubusercontent.com/dbojan/csv2xml/main/shell_open_sendto_folder.bat)
+Start/run, enter shell:sendto
 
 
 ## Usage:

@@ -25,8 +25,8 @@ OS: Windows.
 Language: windows batch, powershell (for replacing utf-8)
 
 
-## Downloand and installation: 
-Right click [here](https://raw.githubusercontent.com/dbojan/csv2xml/main/csv2xml.bat)
+## Downloand: 
+Right click [here](https://raw.githubusercontent.com/dbojan/csv2xml/main/csv2xml.bat) to save bat file.
 
 ## optional:
 Start/run, enter shell:sendto

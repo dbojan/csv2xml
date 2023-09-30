@@ -31,10 +31,10 @@ Unzip it somewhere.
 
 ## optional:
 Run 'shell_open_sendto_folder.bat'
-Create shortcut to csv2xml.bat in newly opened "send to folder". 
-Drag csv2xml.bat to sendto folder using right mouse click. 
+Create shortcut to csv2xml.bat in newly opened "send to folder": 
+by dragging csv2xml.bat to sendto folder using right mouse click. 
 Select 'create shortcuts here'.
-Start/run, enter shell:sendto
+or use start/run, enter shell:sendto to open same folder, repeat drag and drop.
 
 
 ## Usage:

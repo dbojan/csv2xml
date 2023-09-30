@@ -2,7 +2,7 @@
 <code>
 <pre>
 
-## csv2xml, version 2023-09-30-1
+## csv2xml, version 2023-09-30-2
 
 convert CSV or TSV files to "Excel xml files" using command line, 
 or drag and drop CSV file to this program in Windows.
@@ -58,6 +58,8 @@ Libre Office Calc can open xml, but cannot save it, it will offer to save in ods
 -2023-09-30-1
  auto replace of < > ' " &
 
+-2023-09-30-2
+ using .replace instead of -replace in powershell
 
 --
 dbojan.github.io
